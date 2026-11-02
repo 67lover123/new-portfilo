@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Portfolio | Grade 11, Meskaye</title>
+<meta name="description" content="Portfolio of a Grade 11 student at Meskaye.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand" data-e data-store="brand">My Portfolio</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+    <nav id="links" class="links" aria-label="Main">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#goals">Goals</a>
+      <a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="editBtn" title="Edit page content">Edit</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Switch theme" title="Switch theme">◐</button>
+    </div>
+  </div>
+</header>
+
+<div class="editbar" id="editbar" hidden>
+  <span>Edit mode: click any text to change it. Changes save automatically in this browser.</span>
+  <button class="btn small ghost" id="resetBtn">Reset all</button>
+</div>
+
+<main id="main">
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero-in">
+    <div class="hero-text" data-store="hero">
+      <p class="hello" data-e>Hello, I’m</p>
+      <h1 data-e>Your Name Here</h1>
+      <p class="role">Grade 11 Student at Meskaye</p>
+      <p class="lead" data-e>I’m a motivated student who enjoys learning new things and working hard to grow. This is where I share my school work, skills, and goals. (Replace this with your own introduction.)</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">Explore My Portfolio</a>
+        <a href="#about" class="btn ghost">About Me</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo" id="photo" role="img" aria-label="Profile photo placeholder">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="17"/><path d="M14 92c3-23 18-33 36-33s33 10 36 33z"/></svg>
+      </div>
+      <label class="btn small primary photo-btn">Change photo<input type="file" id="photoInput" accept="image/*" hidden></label>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap reveal">
+    <h2>About me</h2>
+    <p class="sub">A little about who I am and what drives me.</p>
+    <div data-store="about">
+      <div class="own card"><h3>In my own words</h3>
+        <p data-e>Write a short paragraph about yourself here: who you are, what you enjoy, and what you want people to know about you.</p></div>
+      <div class="grid g4">
+        <article class="card"><h3>Interests</h3><p data-e>Add the subjects or topics you enjoy most.</p></article>
+        <article class="card"><h3>Personality</h3><p data-e>Describe how friends and teachers would describe you.</p></article>
+        <article class="card"><h3>Academic motivation</h3><p data-e>Explain what pushes you to keep learning.</p></article>
+        <article class="card"><h3>Personal values</h3><p data-e>Share the values that guide your choices.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section alt">
+  <div class="wrap reveal">
+    <h2>Education</h2>
+    <p class="sub">My school journey so far.</p>
+    <ol class="timeline" data-store="education">
+      <li><span class="dot now"></span><div class="card"><h3>Meskaye</h3><p class="meta">Grade 11 · Current</p>
+        <dl><dt>Academic year</dt><dd data-e>Add year, e.g. 20XX–20XX</dd>
+        <dt>Favorite subjects</dt><dd data-e>Add your favorite subjects</dd>
+        <dt>Academic interests</dt><dd data-e>Add what you want to explore further</dd></dl></div></li>
+      <li><span class="dot"></span><div class="card"><h3 data-e>Previous school or level (optional)</h3><p class="meta" data-e>Add years here</p><p data-e>Edit or delete this entry if you don’t need it.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="wrap reveal">
+    <h2>Skills</h2>
+    <p class="sub">Suggested skills to start with. Edit, remove, or add your own so they reflect you.</p>
+    <div class="grid g4" id="skillGrid" data-store="skills">
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">🧠</span><h3 data-e>Critical thinking</h3><p data-e>Looking at ideas from different angles before deciding.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">🧩</span><h3 data-e>Problem-solving</h3><p data-e>Breaking hard questions into smaller steps.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">💬</span><h3 data-e>Communication</h3><p data-e>Sharing ideas clearly, in speech and writing.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">🤝</span><h3 data-e>Teamwork</h3><p data-e>Working with classmates toward a shared goal.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">🎨</span><h3 data-e>Creativity</h3><p data-e>Finding fresh ways to approach a task.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">⏱️</span><h3 data-e>Time management</h3><p data-e>Planning my study time and meeting deadlines.</p></article>
+      <article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">💻</span><h3 data-e>Digital literacy</h3><p data-e>Using technology safely and effectively for learning.</p></article>
+    </div>
+    <button class="btn small ghost only-edit" data-add="skill">+ Add skill</button>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <div class="wrap reveal">
+    <h2>Academic projects</h2>
+    <p class="sub">Placeholder content is shown below. Replace it with your real school work.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects by subject"></div>
+    <div class="grid g3" id="projectGrid" data-store="projects">
+      <article class="card project removable">
+        <button class="remove" aria-label="Remove">×</button>
+        <div class="thumb">Image placeholder</div>
+        <div class="pbody"><span class="tag subject" data-e>Science</span>
+        <h3 data-e>Sample project title</h3><p class="meta" data-e>Month Year</p>
+        <p class="desc" data-e>Placeholder: briefly describe what you did, what you learned, and the result.</p>
+        <button class="btn small ghost view">View details</button></div>
+      </article>
+      <article class="card project removable">
+        <button class="remove" aria-label="Remove">×</button>
+        <div class="thumb">Image placeholder</div>
+        <div class="pbody"><span class="tag subject" data-e>Mathematics</span>
+        <h3 data-e>Sample assignment title</h3><p class="meta" data-e>Month Year</p>
+        <p class="desc" data-e>Placeholder: describe the problem you worked on and the method you used.</p>
+        <button class="btn small ghost view">View details</button></div>
+      </article>
+      <article class="card project removable">
+        <button class="remove" aria-label="Remove">×</button>
+        <div class="thumb">Document placeholder</div>
+        <div class="pbody"><span class="tag subject" data-e>English</span>
+        <h3 data-e>Sample essay or presentation</h3><p class="meta" data-e>Month Year</p>
+        <p class="desc" data-e>Placeholder: summarize your topic and the main point you made.</p>
+        <button class="btn small ghost view">View details</button></div>
+      </article>
+      <article class="card project removable">
+        <button class="remove" aria-label="Remove">×</button>
+        <div class="thumb">Image placeholder</div>
+        <div class="pbody"><span class="tag subject" data-e>Technology</span>
+        <h3 data-e>Sample research task</h3><p class="meta" data-e>Month Year</p>
+        <p class="desc" data-e>Placeholder: explain your question, your sources, and what you found.</p>
+        <button class="btn small ghost view">View details</button></div>
+      </article>
+    </div>
+    <button class="btn small ghost only-edit" data-add="project">+ Add project</button>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <div class="wrap reveal">
+    <h2>Achievements</h2>
+    <p class="sub">Certificates, awards, milestones, and activities.</p>
+    <div class="grid g3 ach-list" id="achList" data-store="achievements"></div>
+    <div class="card empty">
+      <span class="ico">🏅</span><h3>Nothing added yet</h3>
+      <p>When you have real certificates, awards, or milestones, add them here. Turn on Edit mode, then choose “Add achievement”.</p>
+    </div>
+    <button class="btn small ghost only-edit" data-add="ach">+ Add achievement</button>
+  </div>
+</section>
+
+<!-- GOALS -->
+<section id="goals" class="section alt">
+  <div class="wrap reveal">
+    <h2>Goals and aspirations</h2>
+    <p class="sub">Where I’m heading.</p>
+    <div class="grid g3" data-store="goals">
+      <article class="card"><h3>Short-term goals</h3><ul><li data-e>Add a goal for this school year</li><li data-e>Add another goal</li></ul></article>
+      <article class="card"><h3>Long-term goals</h3><ul><li data-e>Add a goal for after school</li><li data-e>Add another goal</li></ul></article>
+      <article class="card"><h3>Skills I want to develop</h3><ul><li data-e>Add a skill you want to learn</li><li data-e>Add another skill</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies" class="section">
+  <div class="wrap reveal">
+    <h2>Hobbies and interests</h2>
+    <p class="sub">What I enjoy outside school.</p>
+    <div class="chips" id="chipList" data-store="hobbies">
+      <span class="chip removable"><span class="ico">⚽</span><span data-e>Hobby one</span><button class="remove" aria-label="Remove">×</button></span>
+      <span class="chip removable"><span class="ico">📚</span><span data-e>Hobby two</span><button class="remove" aria-label="Remove">×</button></span>
+      <span class="chip removable"><span class="ico">🎵</span><span data-e>Hobby three</span><button class="remove" aria-label="Remove">×</button></span>
+    </div>
+    <button class="btn small ghost only-edit" data-add="hobby">+ Add hobby</button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="wrap reveal">
+    <h2>Contact</h2>
+    <p class="sub">Want to get in touch? Here’s how.</p>
+    <div class="card contact">
+      <div data-store="contact">
+        <p class="meta">Email</p>
+        <p class="mail" id="mailText" data-e>your.email@example.com</p>
+      </div>
+      <div class="cta">
+        <button class="btn primary" id="mailBtn">Send an email</button>
+        <button class="btn ghost" id="cvBtn">Download student profile (PDF)</button>
+      </div>
+      <div class="socials" id="socials" data-store="socials">
+        <button class="social" data-url="">LinkedIn</button>
+        <button class="social" data-url="">Instagram</button>
+        <button class="social" data-url="">GitHub</button>
+        <button class="social" data-url="">Telegram</button>
+      </div>
+      <p class="hint only-edit">Edit mode: click a social button to paste its link.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <p>© <span id="year"></span> <span data-e data-store="footname">Your Name</span> · Grade 11, Meskaye</p>
+    <a href="#home">Back to top</a>
+  </div>
+</footer>
+
+<button class="top" id="top" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <button class="close" id="dClose" aria-label="Close">×</button>
+  <div class="thumb" id="dThumb"></div>
+  <span class="tag" id="dSubject"></span>
+  <h3 id="dTitle"></h3><p class="meta" id="dDate"></p><p id="dDesc"></p>
+  <p class="hint">Placeholder details. Add your own description, photos, or links to documents.</p>
+</dialog>
+
+<template id="t-skill"><article class="card skill removable"><button class="remove" aria-label="Remove">×</button><span class="ico">⭐</span><h3 data-e>New skill</h3><p data-e>Describe it in one sentence.</p></article></template>
+<template id="t-hobby"><span class="chip removable"><span class="ico">✨</span><span data-e>New hobby</span><button class="remove" aria-label="Remove">×</button></span></template>
+<template id="t-ach"><article class="card ach removable"><button class="remove" aria-label="Remove">×</button><span class="ico">🏅</span><h3 data-e>Achievement title</h3><p class="meta" data-e>Month Year</p><p data-e>Describe what it is and why it matters to you.</p></article></template>
+<template id="t-project"><article class="card project removable"><button class="remove" aria-label="Remove">×</button><div class="thumb">Image placeholder</div><div class="pbody"><span class="tag subject" data-e>Subject</span><h3 data-e>Project title</h3><p class="meta" data-e>Month Year</p><p class="desc" data-e>Describe the project.</p><button class="btn small ghost view">View details</button></div></article></template>
+
+<script src="script.js"></script>
+</body>
+</html>
